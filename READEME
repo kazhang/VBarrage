@@ -1,0 +1,11 @@
+VBarrage 是一个简易的嵌入网页的弹幕式评论视频播放器，视频播放部分使用的是HTML5的video（后改用了Video.js）。
+
+主要功能：
+1.播放视频（支持格式：mp4/ogg/webM，使用Video.js后支持FLV）
+2.观看和发送弹幕式评论
+
+使用方法：
+1.将Javascript脚本funciton.js和CSS样式表style.css加入头部。
+2.在需要放置视频位置添加<video>标签，id为video，src中填入视频的地址，设定高度和宽度即可。
+
+注意：尚未完成，切勿直接使用。
