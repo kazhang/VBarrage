@@ -1,0 +1,55 @@
+body{text-align:center}
+.container
+{
+	border:1px solid gray;
+	border-radius:5px;
+	width:802px;
+	height:390px;
+	margin:0 auto;
+}
+.leftContent{width:482px;text-align:left;float:left;}
+.sendBar{text-align:center;font-size:13px;text-shadow:1px 1px 1px gray;}
+.sendBar input[type="text"]
+{
+	width:200px;
+}
+.pool
+{
+	border:1px solid gray;
+	border-radius:5px;
+	width:480px;
+	height:360px;
+	margin:2px 2px 0 2px;
+	position:relative;
+	overflow:hidden;
+	/*
+	background:url('53.jpg') no-repeat;
+	background-size: 100%;
+	background-position:0 35px;*/
+}
+.list
+{
+	border:1px solid gray;
+	border-radius:5px;
+	width:310px;
+	height:382px;
+	margin:2px 0 0 5px;
+	float:left;
+		  white-space:nowrap;
+	overflow-y:scroll;
+}
+.list table
+{
+	font-size:12px;
+	padding:2px 2px 0 2px;
+	width:100%;
+	text-align:center;
+}
+.comment
+{
+	color:black;
+	font-size:20px;
+	display:inline;
+	position:absolute;
+	white-space:nowrap;
+}

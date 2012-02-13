@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<title>弹幕式评论</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script type="text/javascript" src="function.js"></script>
+</head>
+<body onload="pollMsg(0)">
+<h2>弹幕式评论</h2>
+<h5>请把video标签中source的src改为本地或者网上的视频地址</h5>
+<div class="container">
+	<div class="leftContent">
+		<div class="pool" id="pool">
+		<video id="video" width="480" height="360" controls="controls" onplay="handle();" onpause="handle();">
+		<source src="movie.mp4" type="video/mp4">
+		</video> 
+		</div>
+		<div class="sendBar">
+			颜色:
+			<select name="color" id="color">
+				<option value="white" selected>白</option>
+				<option value="red">红</option>
+				<option value="blue">蓝</option>
+				<option value="black">黑</option>
+				<option value="yellow">黄</option>
+			</select>
+			字号:
+			<select name="fontsize" id="fontsize">
+				<option value="20">小</option>
+				<option value="25" selected>中</option>
+				<option value="30">大</option>
+			</select>
+			<input type="text" name="msg" id="msg"/>
+			<input type="button" value="发送评论" onclick="sendMsg()"/>
+		</div>
+	</div>
+	<div class="list">
+	<table border="0" id="list">
+	<tr style="background-color:#EEE">
+		<th>时间</th><th>内容</th><th>发送日期</th>
+	</tr>
+	<tr>
+		<td>00:00</td><td>test</td><td>2012-01-01 00:00</td>
+	</tr>
+	</table>
+	</div>
+</div>
+</body>
+</html>
